@@ -75,10 +75,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W     &kp E     &kp R                        &kp T                                                            &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A        &kp S     &kp D     &kp F                        &kp G        &screen                            &kt LS(DQT)      &kt H        &kt J  &kt K      &kp L    &lt 5 MINUS
-&mt LCTRL Z  &kp X     &kp C     &kp V                        &kp B        &lt 4 LG(LS(P))                    &lt 6 DELETE     &kp N        &kp M  &kt COMMA  &kt DOT  &kt FSLH
-&kp LSHFT    &kt LALT  &kt LGUI  &lt_to_layer_0 1 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 LANG_HANGEUL      &lt 1 BACKSPACE  &lt 2 ENTER                             &kp LEFT_CONTROL
+&kp Q        &kp W     &kp E     &kp R                   &kp T                                                            &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A        &kp S     &kp D     &kp F                   &kp G        &screen                            &kt LS(DQT)      &kt H        &kt J  &kt K      &kp L    &lt 5 MINUS
+&mt LCTRL Z  &kp X     &kp C     &kp V                   &kp B        &lt 4 LG(LS(P))                    &lt 6 DELETE     &kp N        &kp M  &kt COMMA  &kt DOT  &kt FSLH
+&kp LSHFT    &kt LALT  &kt LGUI  &lt_to_layer_0 1 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG_HANGEUL      &lt 1 BACKSPACE  &lt 2 ENTER                             &kp LEFT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -95,10 +95,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7             &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                  &kp LS(EXCL)  &kp LS(DQT)  &kp LS(POUND)  &kp LS(DLLR)     &kp LS(PRCNT)
-&kp RIGHT                   &kp RIGHT                   &kp RIGHT        &kp RIGHT        &kp RIGHT   &kp RIGHT          &kp RIGHT  &kp LS(AMPS)  &kp LS(SQT)  &kp LS(LPAR)   &kp LS(RPAR)     &kp LS(N0)
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1             &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp EQUAL          &trans     &kp LBKT      &kp RBKT     &kp ENTER      &kp RIGHT_BRACE  &kp BACKSLASH
-&kp LA(LC(LG(UP_ARROW)))    &kp LA(LC(LG(DOWN_ARROW)))  &trans           &kp LG(A)        &kp LG(X)   &kp LS(LG(V))      &kp LG(C)  &kp LG(V)                                                  &kp PIPE
+&kp MINUS                 &kp N7                      &kp N8  &kp N9     &kp PLUS                                  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(N5)
+&kp FSLH                  &kp N4                      &kp N5  &kp N6     &kp COLON   &kp N8             &kp RIGHT  &kp LS(NUMBER_6)  &kp LS(N7)        &kp LS(N8)        &kp LS(N9)         &kp LS(N0)
+&kp N0                    &kp N1                      &kp N2  &kp N3     &kp PERIOD  &kp EQUAL          &trans     &kp LBKT          &kp RBKT          &kp ENTER         &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp LA(LC(LG(UP_ARROW)))  &kp LA(LC(LG(DOWN_ARROW)))  &trans  &kp LG(A)  &kp LG(X)   &kp LS(LG(V))      &kp LG(C)  &kp LG(V)                                                                &kp PIPE
             >;
         };
 
