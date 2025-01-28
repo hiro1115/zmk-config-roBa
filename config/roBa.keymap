@@ -50,6 +50,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        screen: screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_COMMAND &kp N5>;
+            label = "SCREEN";
+        };
     };
 
     behaviors {
@@ -69,7 +76,7 @@
         default_layer {
             bindings = <
 &kp Q        &kp W     &kp E     &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A        &kp S     &kp D     &kp F                        &kp G        &kt LG(LS(N4))                     &kt LS(DQT)    &kt H        &kt J  &kt K      &kp L    &kt MINUS
+&kp A        &kp S     &kp D     &kp F                        &kp G        &screen                            &kt LS(DQT)    &kt H        &kt J  &kt K      &kp L    &kt MINUS
 &mt LCTRL Z  &kp X     &kp C     &kp V                        &kp B        &kt LS(LG(P))                      &kt DEL        &kp N        &kp M  &kt COMMA  &kt DOT  &kt FSLH
 &kp LSHFT    &kt LALT  &kt LGUI  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp LEFT_CONTROL
             >;
@@ -79,28 +86,28 @@
 
         FUNCTION {
             bindings = <
-&kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)                            &kp LS(Y)  &kp LS(U)  &kp LS(I)   &kp LS(O)   &kp LS(P)
-&kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &kp F11        &kp LCTRL  &kp LS(H)  &kp LS(J)  &kp LS(K)   &kp LS(L)   &kp LS(PLUS)
-&kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp LS(N)      &kp LS(M)  &kp LS(N)  &kp LS(M)  &kp LS(LT)  &kp LS(GT)  &kp LS(QMARK)
-&trans     &trans     &trans     &trans     &trans     &trans         &trans     &trans                                        &kp F12
+&kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)               &kp LS(T)                                          &kp LS(Y)      &kp LS(U)  &kp LS(I)   &kp LS(O)   &kp LS(P)
+&kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)               &kp LS(G)  &kp F11                      &kp LCTRL  &kp LS(H)      &kp LS(J)  &kp LS(K)   &kp LS(L)   &kp LS(PLUS)
+&kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)               &kp LS(B)  &kp LS(N)                    &kp LS(M)  &kp LS(N)      &kp LS(M)  &kp LS(LT)  &kp LS(GT)  &kp LS(QMARK)
+&trans     &trans     &trans     &kp LC(LA(LEFT_ARROW))  &kp LG(F)  &kp LA(LC(RIGHT_ARROW))      &kp LG(Z)  &kp LG(LS(Z))                                     &kp F12
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                     &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp COLON      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL      &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans         &trans          &trans                                                                     &kp PIPE
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                         &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)       &kp LG(N5)
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp COLON          &kp UNDERSCORE  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)       &kp LG(N0)
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans          &kp LBKT    &kp RBKT    &kp ENTER   &kp RIGHT_BRACE  &kp BACKSLASH
+&trans                      &trans           &trans           &kp LG(A)        &kp LG(X)     &kp LS(LG(V))      &kp LG(C)       &kp LG(V)                                            &kp PIPE
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                             &trans         &trans  &trans  &trans  &trans
+&kp TAB         &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans        &trans         &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans        &trans         &trans  &trans  &trans  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &kp LG(PLUS)  &kp LG(MINUS)                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
