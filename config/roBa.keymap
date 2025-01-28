@@ -77,7 +77,7 @@
             bindings = <
 &kp Q        &kp W     &kp E     &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A        &kp S     &kp D     &kp F                        &kp G        &screen                            &kt LS(DQT)    &kt H        &kt J  &kt K      &kp L    &kt MINUS
-&mt LCTRL Z  &kp X     &kp C     &kp V                        &kp B        &kt LS(LG(P))                      &kt DEL        &kp N        &kp M  &kt COMMA  &kt DOT  &kt FSLH
+&mt LCTRL Z  &kp X     &kp C     &kp V                        &kp B        &lt 4 LG(LS(P))                    &lt 6 DELETE   &kp N        &kp M  &kt COMMA  &kt DOT  &kt FSLH
 &kp LSHFT    &kt LALT  &kt LGUI  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp LEFT_CONTROL
             >;
 
@@ -86,19 +86,19 @@
 
         FUNCTION {
             bindings = <
-&kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)               &kp LS(T)                                          &kp LS(Y)      &kp LS(U)  &kp LS(I)   &kp LS(O)   &kp LS(P)
-&kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)               &kp LS(G)  &kp F11                      &kp LCTRL  &kp LS(H)      &kp LS(J)  &kp LS(K)   &kp LS(L)   &kp LS(PLUS)
-&kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)               &kp LS(B)  &kp LS(N)                    &kp LS(M)  &kp LS(N)      &kp LS(M)  &kp LS(LT)  &kp LS(GT)  &kp LS(QMARK)
-&trans     &trans     &trans     &kp LC(LA(LEFT_ARROW))  &kp LG(F)  &kp LA(LC(RIGHT_ARROW))      &kp LG(Z)  &kp LG(LS(Z))                                     &kp F12
+&kp LS(Q)          &kp LS(W)          &kp LS(E)  &kp LS(R)               &kp LS(T)                                          &kp LS(Y)      &kp LS(U)  &kp LS(I)   &kp LS(O)   &kp LS(P)
+&kp LS(A)          &kp LS(S)          &kp LS(D)  &kp LS(F)               &kp LS(G)  &kp F11                      &kp LCTRL  &kp LS(H)      &kp LS(J)  &kp LS(K)   &kp LS(L)   &kp LS(PLUS)
+&kp LS(Z)          &kp LS(X)          &kp LS(C)  &kp LS(V)               &kp LS(B)  &kp LS(N)                    &kp LS(M)  &kp LS(N)      &kp LS(M)  &kp LS(LT)  &kp LS(GT)  &kp LS(QMARK)
+&kp LA(LC(LG(R)))  &kp LA(LC(LG(C)))  &trans     &kp LC(LA(LEFT_ARROW))  &kp LG(F)  &kp LA(LC(RIGHT_ARROW))      &kp LG(Z)  &kp LG(LS(Z))                                     &kp F12
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                         &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)       &kp LG(N5)
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp COLON          &kp UNDERSCORE  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)       &kp LG(N0)
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans          &kp LBKT    &kp RBKT    &kp ENTER   &kp RIGHT_BRACE  &kp BACKSLASH
-&trans                      &trans           &trans           &kp LG(A)        &kp LG(X)     &kp LS(LG(V))      &kp LG(C)       &kp LG(V)                                            &kp PIPE
+&kp MINUS                   &kp KP_NUMBER_7             &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                         &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)       &kp LG(N5)
+&kp SLASH                   &kp KP_NUMBER_4             &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp COLON          &kp UNDERSCORE  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)       &kp LG(N0)
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1             &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans          &kp LBKT    &kp RBKT    &kp ENTER   &kp RIGHT_BRACE  &kp BACKSLASH
+&kp LA(LC(LG(UP_ARROW)))    &kp LA(LC(LG(DOWN_ARROW)))  &trans           &kp LG(A)        &kp LG(X)     &kp LS(LG(V))      &kp LG(C)       &kp LG(V)                                            &kp PIPE
             >;
         };
 
